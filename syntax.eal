@@ -10,3 +10,19 @@ if x is greater than 10 then
     print "x is large"
 else
     print "x is small"
+
+>> Declaring variables
+declare int x = 10;
+declare bool flag = true;
+
+>> Assembly-like operation
+mov eax, 5
+add eax, x
+
+>> English-like command using Pentinary logic
+if x is both greater than 5 and less than 15 then
+    print "x is in range"
+else if x is neither less than 5 nor greater than 15 then
+    print "x is invalid"
+else
+    print "x is out of range"
