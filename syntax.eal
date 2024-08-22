@@ -1,0 +1,12 @@
+>> Declaring a variable
+declare int x = 10;
+
+>> Assembly-like operation
+mov eax, 5
+add eax, x
+
+>> English-like command
+if x is greater than 10 then
+    print "x is large"
+else
+    print "x is small"
