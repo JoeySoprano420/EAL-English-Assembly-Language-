@@ -1,0 +1,33 @@
+%{
+#include "EAL.tab.h"
+%}
+
+%option noyywrap
+
+%%
+
+"declare"               { return DECLARE; }
+"mov"                   { return MOV; }
+"add"                   { return ADD; }
+"if"                    { return IF; }
+"then"                  { return THEN; }
+"else"                  { return ELSE; }
+"repeat"                { return REPEAT; }
+"times"                 { return TIMES; }
+"call"                  { return CALL; }
+"print"                 { return PRINT; }
+"and"                   { return AND; }
+"is"                    { return IS; }
+"greater" "than"        { return GREATER_THAN; }
+"less" "than"           { return LESS_THAN; }
+"equal" "to"            { return EQUAL_TO; }
+"both"                  { return BOTH; }
+"neither"               { return NEITHER; }
+"neither"               { return NEITHER; }
+[0-9]+                  { yylval.num = atoi(yytext); return NUMBER; }
+[a-zA-Z_][a-zA-Z_0-9]*  { yylval.id = strdup(yytext); return ID; }
+\"[^\"]*\"              { yylval.str = strdup(yytext); return STRING; }
+[ \t\n]+                { /* skip whitespace */ }
+.                       { return yytext[0]; }
+
+%%
