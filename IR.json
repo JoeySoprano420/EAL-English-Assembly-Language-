@@ -10,6 +10,14 @@
       }
     },
     {
+      "type": "Declaration",
+      "name": "flag",
+      "value": {
+        "type": "Boolean",
+        "value": true
+      }
+    },
+    {
       "type": "Operation",
       "operation": "mov",
       "target": "eax",
@@ -22,10 +30,14 @@
       "type": "Condition",
       "condition": {
         "type": "Comparison",
-        "operator": "greater",
+        "operator": "both",
         "value": {
-          "type": "Number",
-          "value": 10
+          "type": "Comparison",
+          "operator": "greater",
+          "value": {
+            "type": "Number",
+            "value": 5
+          }
         }
       },
       "then": [
@@ -33,7 +45,7 @@
           "type": "Print",
           "value": {
             "type": "String",
-            "value": "x is large"
+            "value": "x is in range"
           }
         }
       ],
@@ -42,7 +54,7 @@
           "type": "Print",
           "value": {
             "type": "String",
-            "value": "x is small"
+            "value": "x is out of range"
           }
         }
       ]
