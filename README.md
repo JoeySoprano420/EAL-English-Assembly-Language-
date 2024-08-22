@@ -513,3 +513,60 @@ WS: [ \t\n]+ -> skip ;
 - **Pentinary Logic Handling**: Ensure efficient handling of Pentinary states in conditions and operations.
 
 This expanded design incorporates advanced features and cutting-edge logic, ensuring the language is powerful, efficient, and capable of handling complex tasks with eloquence and precision. The integration with the DLVD and the use of Pentinary logic enhance its functionality and performance, making it a robust solution for modern programming needs.
+
+
+
+
+Certainly! Here's the revised example of an `EngAssemLang` (EAL) program incorporating the specified syntax and semantics:
+
+### Revised Example EAL Program
+
+```eal
+>> Declaring variables
+declare int x = 10; // Declare an integer variable x and initialize it to 10
+declare bool flag = true; // Declare a boolean variable flag and initialize it to true
+
+>> Assembly-like operation
+mov eax, 5; // Move the value 5 into register eax
+add eax, x; // Add the value of x to register eax
+
+>> English-like command using Pentinary logic
+if x is both greater than 5 and less than 15 then
+    print "x is in range"; // Print message if x is in range
+else if x is neither less than 5 nor greater than 15 then
+    print "x is invalid"; // Print message if x is invalid
+else
+    print "x is out of range"; // Print message if x is out of range
+```
+
+### Explanation
+
+- **Declaring Variables**:
+  - `declare int x = 10;`: This declares an integer variable `x` and initializes it with the value `10`.
+  - `declare bool flag = true;`: This declares a boolean variable `flag` and initializes it with `true`.
+
+- **Assembly-like Operation**:
+  - `mov eax, 5;`: This moves the value `5` into the register `eax`. The `mov` command simulates assembly-like behavior.
+  - `add eax, x;`: This adds the value of `x` to the register `eax`.
+
+- **English-like Commands with Pentinary Logic**:
+  - `if x is both greater than 5 and less than 15 then`: This checks if `x` satisfies both conditions using Pentinary logic.
+  - `else if x is neither less than 5 nor greater than 15 then`: This checks if `x` is neither less than `5` nor greater than `15`, which in Pentinary logic means `x` is in an invalid range.
+  - `else`: This handles any other case where `x` does not meet the above conditions.
+
+### How to Run This Example
+
+1. **Save the Code**: Save the revised code into a file named `check_x.eal`.
+2. **Execute the Code**: Use the integrated IDE or command line to run the program.
+
+   ```bash
+   eal check_x.eal
+   ```
+
+3. **Expected Output**: The program will print:
+
+   ```
+   x is in range
+   ```
+
+This revised example demonstrates how `EngAssemLang` blends assembly-like operations with English-like commands and Pentinary logic to provide a powerful and intuitive programming experience.
