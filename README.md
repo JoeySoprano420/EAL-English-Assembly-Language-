@@ -570,3 +570,19 @@ else
    ```
 
 This revised example demonstrates how `EngAssemLang` blends assembly-like operations with English-like commands and Pentinary logic to provide a powerful and intuitive programming experience.
+
+
+
+
+# EngAssemLang (EAL)
+
+## Overview
+
+EngAssemLang (EAL) is an advanced programming language combining assembly-like operations with English-like commands. It integrates seamlessly with a Dynamic Local Virtual Database (DLVD) for optimized performance and concurrency.
+
+## Installation
+
+To install EAL, use the following command:
+
+```bash
+pip install .
