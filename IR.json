@@ -1,0 +1,51 @@
+{
+  "type": "Program",
+  "body": [
+    {
+      "type": "Declaration",
+      "name": "x",
+      "value": {
+        "type": "Number",
+        "value": 10
+      }
+    },
+    {
+      "type": "Operation",
+      "operation": "mov",
+      "target": "eax",
+      "value": {
+        "type": "Number",
+        "value": 5
+      }
+    },
+    {
+      "type": "Condition",
+      "condition": {
+        "type": "Comparison",
+        "operator": "greater",
+        "value": {
+          "type": "Number",
+          "value": 10
+        }
+      },
+      "then": [
+        {
+          "type": "Print",
+          "value": {
+            "type": "String",
+            "value": "x is large"
+          }
+        }
+      ],
+      "else": [
+        {
+          "type": "Print",
+          "value": {
+            "type": "String",
+            "value": "x is small"
+          }
+        }
+      ]
+    }
+  ]
+}
