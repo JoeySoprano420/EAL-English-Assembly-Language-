@@ -301,7 +301,7 @@ Contributions are welcome. Please refer to the GitHub repository for guidelines.
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the Modified QSRLC License. See the LICENSE file for details.
 ```
 
 This setup ensures that the `EngAssemLang` programming language is well-documented, easily installable, and provides a complete
